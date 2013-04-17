@@ -18,7 +18,7 @@ http://www.windowsphone.com/en-us/store/app/ckreader/088a5ae5-f58e-4390-9d79-63b
 
 Windows Phone Store更新日志
 ------------
-**v1.0.2(2013-4-7)**
+v1.0.2(2013-4-7)
 增加了打开邮件附件的功能
 重新绘制了图标和磁贴图片，更符合平台统一风格
 界面切换加入动画效果
