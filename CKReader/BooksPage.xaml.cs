@@ -53,6 +53,9 @@ namespace CKReader
             {
                 string path = currentBook.IsSample ? "" : currentBook.Path;
                 this.NavigationService.Navigate(new Uri("/MainPage.xaml?path=" + path, UriKind.Relative));
+
+                // clear selection
+                this.fileList.SelectedItem = null;
             }
         }
 
