@@ -21,15 +21,15 @@ namespace CKReader
             // Example launch URI: /FileTypeAssociation?fileToken=89819279-4fe0-4531-9f57-d633f0949a19
             if (tempUri.Contains("/FileTypeAssociation"))
             {
-                // Get the file ID (after "fileToken=").
+                // 带附件启动，获得文件token串
                 int fileIDIndex = tempUri.IndexOf("fileToken=") + 10;
                 string fileID = tempUri.Substring(fileIDIndex);
 
-                // Map the file association launch to route page.
+                // 将文件token串发给启动页
                 return new Uri("/MainPage.xaml?fileToken=" + fileID, UriKind.Relative);
             }
 
-            // Otherwise perform normal launch.
+            // 无附件，正常启动应用
             return uri;
         }
     }
