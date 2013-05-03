@@ -8,6 +8,7 @@ using Windows.Phone.Storage.SharedAccess;
 
 namespace CKReader
 {
+    // 自定义URL Mapper类，用来接受其他应用发来的附件文件
     class CustomURIMapper : UriMapperBase
     {
         private string tempUri;

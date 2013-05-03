@@ -114,14 +114,17 @@ namespace CKReader
 
             // Create the frame but don't set it as RootVisual yet; this allows the splash
             // screen to remain active until the application is ready to render.
+
+            // 将应用整体frame替换为tookit中的TransitionFrame
             //RootFrame = new PhoneApplicationFrame();
             RootFrame = new TransitionFrame();
-            RootFrame.Navigated += CompleteInitializePhoneApplication;
 
+            // 自定义的URI Mapper，用于打开其他程序发过来的附件
             // Assign the URI-mapper class to the application frame.
             RootFrame.UriMapper = new CustomURIMapper();
 
-            // Handle navigation failures
+            // Handle navigation success and failures
+            RootFrame.Navigated += CompleteInitializePhoneApplication;
             RootFrame.NavigationFailed += RootFrame_NavigationFailed;
 
             // Handle reset requests for clearing the backstack
