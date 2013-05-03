@@ -17,7 +17,7 @@ namespace CKReader
         {
             tempUri = uri.ToString();
 
-            // File association launch
+            // 检查启动时是否带有文件附件
             // Example launch URI: /FileTypeAssociation?fileToken=89819279-4fe0-4531-9f57-d633f0949a19
             if (tempUri.Contains("/FileTypeAssociation"))
             {
