@@ -28,6 +28,12 @@ namespace CKReader
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
+
+            // resize main text block based on actual rendered height
+            double h = Application.Current.RootVisual.RenderSize.Height;
+            Debug.WriteLine("scaled height for this phone:" + h);
+            content.Height = 645 + (h - 800);
+
             try
             {
                 filetoken = NavigationContext.QueryString["fileToken"];
