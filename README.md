@@ -28,6 +28,10 @@ Windows Phone Store更新日志
 
 欢迎使用CKReader文本阅读工具，本工具支持所有以.txtx为后缀名的UTF-8编码纯文本文件。要在应用启动时的文件列表中看到您的书籍，请将下载的书籍文件改名为.txtx后缀，放在手机的SD卡根目录，或者是SD卡的Book/Books文件夹下，再运行本应用。
 
+如何编译
+------------
+下载代码后使用WP8 SDK自带的VS2012 Express打开即可，需要在Nuget包管理中安装Windows Phone Toolkit。
+
 TODO list
 ------------
 1. 支持背景图片 
