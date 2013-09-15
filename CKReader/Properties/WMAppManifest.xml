@@ -16,7 +16,7 @@
           <SmallImageURI IsRelative="true" IsResource="false">Assets\reader_159.png</SmallImageURI>
           <Count>0</Count>
           <BackgroundImageURI IsRelative="true" IsResource="false">Assets\reader_336.png</BackgroundImageURI>
-          <Title>CKReader</Title>
+          <Title>CKReader(Debug)</Title>
           <BackContent>
           </BackContent>
           <BackBackgroundImageURI>
