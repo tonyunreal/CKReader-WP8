@@ -50,7 +50,7 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="0,0,0,0">
-            <phone:LongListSelector x:Name="fileList" HorizontalAlignment="Left" Height="635" VerticalAlignment="Top" Width="480" SelectionChanged="JumpToNextPage">
+            <phone:LongListSelector x:Name="fileList" HorizontalAlignment="Left"  Margin="0,0,0,0" Width="480" SelectionChanged="JumpToNextPage">
                 <phone:LongListSelector.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal" Height="120">
