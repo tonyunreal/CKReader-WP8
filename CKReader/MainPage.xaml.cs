@@ -214,7 +214,7 @@ namespace CKReader
                             // print its content
                             Stream x = await esf.OpenForReadAsync();
                             byte[] buffer = new byte[x.Length];
-                            x.Read(buffer, 0, (int)x.Length);
+                            await x.ReadAsync(buffer, 0, (int)x.Length);
                             x.Close();
 
                             string result = System.Text.Encoding.UTF8.GetString(buffer, 0, buffer.Length);
@@ -290,7 +290,7 @@ namespace CKReader
                         var fileStream = await esf.OpenReadAsync();
                         Stream x = fileStream.AsStream();
                         byte[] buffer = new byte[x.Length];
-                        x.Read(buffer, 0, (int)x.Length);
+                        await x.ReadAsync(buffer, 0, (int)x.Length);
                         x.Close();
 
                         string result = System.Text.Encoding.UTF8.GetString(buffer, 0, buffer.Length);
@@ -357,7 +357,7 @@ namespace CKReader
                         var fileStream = await esf.OpenReadAsync();
                         Stream x = fileStream.AsStream();
                         byte[] buffer = new byte[x.Length];
-                        x.Read(buffer, 0, (int)x.Length);
+                        await x.ReadAsync(buffer, 0, (int)x.Length);
                         x.Close();
 
                         string result = System.Text.Encoding.UTF8.GetString(buffer, 0, buffer.Length);
